@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Scarecrow from "../../public/Scarecrow.png";
+import Scarecrow from "../../public/404-not-found-challenge/scarecrow.png";
 
 import { Inconsolata, Space_Mono, Montserrat } from "@next/font/google";
 
