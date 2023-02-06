@@ -17,7 +17,7 @@ const space_mono = Space_Mono({
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export default function notFoundChallenge() {
+export default function NotFoundChallenge() {
   return (
     <div className="flex h-screen flex-col justify-between px-6 md:px-20">
       <div className={`${inconsolata.className} mt-5 text-2xl md:mt-10`}>
