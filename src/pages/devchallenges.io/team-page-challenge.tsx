@@ -1,12 +1,13 @@
 import Image, { type StaticImageData } from "next/image";
-import Photo1 from "../../public/team-page-challenge/photo1.png";
-import Photo2 from "../../public/team-page-challenge/photo2.png";
-import Photo3 from "../../public/team-page-challenge/photo3.png";
-import Photo4 from "../../public/team-page-challenge/photo4.png";
-import Photo5 from "../../public/team-page-challenge/photo5.png";
-import Photo6 from "../../public/team-page-challenge/photo6.png";
+import Photo1 from "public/team-page-challenge/photo1.png";
+import Photo2 from "public/team-page-challenge/photo2.png";
+import Photo3 from "public/team-page-challenge/photo3.png";
+import Photo4 from "public/team-page-challenge/photo4.png";
+import Photo5 from "public/team-page-challenge/photo5.png";
+import Photo6 from "public/team-page-challenge/photo6.png";
 
-import { PT_Serif, Poppins, Montserrat } from "@next/font/google";
+import { PT_Serif, Poppins } from "@next/font/google";
+import Footer from "../../components/devchallenges.io/footer";
 
 const pt_serif = PT_Serif({
   weight: ["400", "700"],
@@ -19,8 +20,6 @@ const poppins = Poppins({
   style: ["normal"],
   subsets: ["latin"],
 });
-
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 function Crew({
   image,
@@ -75,12 +74,7 @@ export default function TeamPageChallenge() {
         <Crew image={Photo5} title={"DEVELOPER"} name={"Griff Richards"} />
         <Crew image={Photo6} title={"DEVELOPER"} name={"Stan John"} />
       </div>
-      <div
-        className={`${montserrat.className} pb-6 text-center text-sm font-medium text-[#BDBDBD]`}
-      >
-        created by <span className="font-bold underline">jiantengtoo</span> -
-        devChallenges.io
-      </div>
+      <Footer />
     </div>
   );
 }

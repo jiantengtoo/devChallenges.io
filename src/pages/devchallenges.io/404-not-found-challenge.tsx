@@ -1,7 +1,8 @@
 import Image from "next/image";
-import Scarecrow from "../../public/404-not-found-challenge/scarecrow.png";
+import Scarecrow from "public/404-not-found-challenge/scarecrow.png";
 
-import { Inconsolata, Space_Mono, Montserrat } from "@next/font/google";
+import { Inconsolata, Space_Mono } from "@next/font/google";
+import Footer from "../../components/devchallenges.io/footer";
 
 const inconsolata = Inconsolata({
   weight: ["700"],
@@ -14,8 +15,6 @@ const space_mono = Space_Mono({
   style: ["normal"],
   subsets: ["latin"],
 });
-
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function NotFoundChallenge() {
   return (
@@ -46,12 +45,7 @@ export default function NotFoundChallenge() {
           </button>
         </div>
       </div>
-      <div
-        className={`${montserrat.className} pb-6 text-center text-sm font-medium text-[#BDBDBD]`}
-      >
-        created by <span className="font-bold underline">jiantengtoo</span> -
-        devChallenges.io
-      </div>
+      <Footer />
     </div>
   );
 }
