@@ -2,7 +2,7 @@ import Image from "next/image";
 import Scarecrow from "public/404-not-found-challenge/scarecrow.png";
 
 import { Inconsolata, Space_Mono } from "@next/font/google";
-import Footer from "../../components/devchallenges.io/footer";
+import Footer from "src/components/devchallenges.io/footer";
 
 const inconsolata = Inconsolata({
   weight: ["700"],

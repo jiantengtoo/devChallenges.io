@@ -7,7 +7,7 @@ import Photo5 from "public/team-page-challenge/photo5.png";
 import Photo6 from "public/team-page-challenge/photo6.png";
 
 import { PT_Serif, Poppins } from "@next/font/google";
-import Footer from "../../components/devchallenges.io/footer";
+import Footer from "src/components/devchallenges.io/footer";
 
 const pt_serif = PT_Serif({
   weight: ["400", "700"],
