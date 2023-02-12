@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Montserrat, Playfair_Display } from "@next/font/google";
-import Photo1 from "public/recipe-page/photo1.png";
 import Footer from "src/components/devchallenges.io/footer";
 
 const playfair_display = Playfair_Display({
@@ -111,7 +110,13 @@ export default function RecipePage() {
             its simple decadence. For the best results, bake in a water bath.
           </div>
         </div>
-        <Image src={Photo1} alt="Cheesecake" className="mt-6 rounded-xl" />
+        <Image
+          src={"/recipe-page/photo1.png"}
+          alt="Cheesecake"
+          width={1938}
+          height={940}
+          className="mt-6 rounded-xl"
+        />
         <div className="md:flex md:flex-row-reverse">
           <div className="flex h-full flex-shrink-0 rounded pt-6 md:ml-10 md:mt-6 md:min-w-fit md:px-6 md:pb-6 md:shadow-md">
             <div className="flex flex-col">

@@ -1,10 +1,4 @@
-import Image, { type StaticImageData } from "next/image";
-import Photo1 from "public/team-page-challenge/photo1.png";
-import Photo2 from "public/team-page-challenge/photo2.png";
-import Photo3 from "public/team-page-challenge/photo3.png";
-import Photo4 from "public/team-page-challenge/photo4.png";
-import Photo5 from "public/team-page-challenge/photo5.png";
-import Photo6 from "public/team-page-challenge/photo6.png";
+import Image from "next/image";
 
 import { PT_Serif, Poppins } from "@next/font/google";
 import Footer from "src/components/devchallenges.io/footer";
@@ -26,14 +20,20 @@ function Crew({
   title,
   name,
 }: {
-  image: StaticImageData;
+  image: string;
   title: string;
   name: string;
 }) {
   return (
     <div className="pb-2 pl-2 pr-6 even:pt-20 md:[&:nth-child(6n+4)]:pt-0 md:[&:nth-child(6n+6)]:pt-0 md:[&:nth-child(6n+5)]:pt-20">
       <div className="flex">
-        <Image src={image} alt={name} className="md:w-[238px]" />
+        <Image
+          src={image}
+          alt={name}
+          className="md:w-[238px]"
+          width={476}
+          height={682}
+        />
         <div
           className={`${pt_serif.className} origin-top-left translate-x-5 rotate-90 whitespace-nowrap text-xs`}
         >
@@ -67,12 +67,36 @@ export default function TeamPageChallenge() {
         </div>
       </div>
       <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
-        <Crew image={Photo1} title={"PRODUCT OWNER"} name={"Bill Mahoney"} />
-        <Crew image={Photo2} title={"ART DIRECTOR"} name={"Saba Cabrera"} />
-        <Crew image={Photo3} title={"TECH LEAD"} name={"Shae Le"} />
-        <Crew image={Photo4} title={"UX DESIGNER"} name={"Skylah Lu"} />
-        <Crew image={Photo5} title={"DEVELOPER"} name={"Griff Richards"} />
-        <Crew image={Photo6} title={"DEVELOPER"} name={"Stan John"} />
+        <Crew
+          image={"/team-page-challenge/photo1.png"}
+          title={"PRODUCT OWNER"}
+          name={"Bill Mahoney"}
+        />
+        <Crew
+          image={"/team-page-challenge/photo2.png"}
+          title={"ART DIRECTOR"}
+          name={"Saba Cabrera"}
+        />
+        <Crew
+          image={"/team-page-challenge/photo3.png"}
+          title={"TECH LEAD"}
+          name={"Shae Le"}
+        />
+        <Crew
+          image={"/team-page-challenge/photo4.png"}
+          title={"UX DESIGNER"}
+          name={"Skylah Lu"}
+        />
+        <Crew
+          image={"/team-page-challenge/photo5.png"}
+          title={"DEVELOPER"}
+          name={"Griff Richards"}
+        />
+        <Crew
+          image={"/team-page-challenge/photo6.png"}
+          title={"DEVELOPER"}
+          name={"Stan John"}
+        />
       </div>
       <Footer />
     </div>

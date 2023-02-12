@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Scarecrow from "public/404-not-found-challenge/scarecrow.png";
 
 import { Inconsolata, Space_Mono } from "@next/font/google";
 import Footer from "src/components/devchallenges.io/footer";
@@ -24,9 +23,11 @@ export default function NotFoundChallenge() {
       </div>
       <div className="flex grow flex-col pt-6 md:grow-0 md:flex-row md:gap-[120px] md:pt-0">
         <Image
-          src={Scarecrow}
+          src={"/404-not-found-challenge/scarecrow.png"}
           alt={"scarecrow 404 not found"}
           className={"mx-auto h-auto w-[286px] md:w-[540px]"}
+          width={"1079"}
+          height={"895"}
         />
         <div className="flex grow flex-col justify-evenly md:grow-0 md:justify-between">
           <div

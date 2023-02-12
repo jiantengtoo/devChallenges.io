@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Photo1 from "public/interior-consultant/photo1.png";
-import Photo2 from "public/interior-consultant/photo2.png";
 
 import { Crimson_Pro, Montserrat, Lora } from "@next/font/google";
 import Footer from "src/components/devchallenges.io/footer";
@@ -65,13 +63,21 @@ export default function InteriorConsultant() {
           </div>
         </div>
         <div>
-          <Image src={Photo1} alt="interior" className="max-h-[586px] w-auto" />
+          <Image
+            src={"/interior-consultant/photo1.png"}
+            alt="interior"
+            className="max-h-[586px] w-auto"
+            width={1474}
+            height={1110}
+          />
           <div className="relative -top-14 left-12 mr-16 bg-neutral-900 px-5 pt-4 pb-6 shadow-md shadow-[rgb(0,0,0,0.25)] md:left-52 md:mr-64 ">
             <div className="flex items-center gap-4">
               <Image
-                src={Photo2}
+                src={"/interior-consultant/photo2.png"}
                 alt="profile pic"
                 className="h-10 w-10 rounded-full"
+                width={200}
+                height={200}
               />
               <div className={`${montserrat.className}`}>
                 <div className="text-xs font-medium">Aliza Webber</div>
