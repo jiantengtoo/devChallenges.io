@@ -1,19 +1,7 @@
 import Image from "next/image";
 
-import { Inconsolata, Space_Mono } from "@next/font/google";
 import Footer from "src/components/devchallenges.io/footer";
-
-const inconsolata = Inconsolata({
-  weight: ["700"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
-
-const space_mono = Space_Mono({
-  weight: ["400", "700"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
+import { inconsolata, space_mono } from "src/shared/fonts";
 
 export default function NotFoundChallenge() {
   return (

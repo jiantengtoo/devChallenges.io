@@ -1,19 +1,7 @@
 import Image from "next/image";
 
-import { PT_Serif, Poppins } from "@next/font/google";
 import Footer from "src/components/devchallenges.io/footer";
-
-const pt_serif = PT_Serif({
-  weight: ["400", "700"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
-
-const poppins = Poppins({
-  weight: ["400", "600"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
+import { pt_serif, poppins } from "src/shared/fonts";
 
 function Crew({
   image,

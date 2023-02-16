@@ -1,14 +1,7 @@
 import Image from "next/image";
 
-import { Crimson_Pro, Montserrat, Lora } from "@next/font/google";
 import Footer from "src/components/devchallenges.io/footer";
-
-const crimson_pro = Crimson_Pro({ weight: ["200"], subsets: ["latin"] });
-const montserrat = Montserrat({
-  weight: ["400", "500", "700"],
-  subsets: ["latin"],
-});
-const lora = Lora({ weight: ["500", "700"], subsets: ["latin"] });
+import { crimson_pro, montserrat, lora } from "src/shared/fonts";
 
 export default function InteriorConsultant() {
   return (

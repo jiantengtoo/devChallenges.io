@@ -1,6 +1,4 @@
-import { Montserrat } from "@next/font/google";
-
-const montserrat = Montserrat({ subsets: ["latin"] });
+import { montserrat } from "src/shared/fonts";
 
 export default function Footer() {
   return (

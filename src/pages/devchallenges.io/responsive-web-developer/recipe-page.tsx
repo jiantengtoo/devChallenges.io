@@ -1,18 +1,6 @@
 import Image from "next/image";
-import { Montserrat, Playfair_Display } from "@next/font/google";
 import Footer from "src/components/devchallenges.io/footer";
-
-const playfair_display = Playfair_Display({
-  weight: ["400", "700"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-});
-
-const montserrat = Montserrat({
-  weight: ["400", "500", "700"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-});
+import { montserrat, playfair_display } from "src/shared/fonts";
 
 const SixDotsIcon = () => (
   <svg
