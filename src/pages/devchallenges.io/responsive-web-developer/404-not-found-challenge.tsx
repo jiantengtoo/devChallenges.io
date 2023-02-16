@@ -11,7 +11,7 @@ export default function NotFoundChallenge() {
       </div>
       <div className="flex grow flex-col pt-6 md:grow-0 md:flex-row md:gap-[120px] md:pt-0">
         <Image
-          src={"/404-not-found-challenge/scarecrow.png"}
+          src={"/404-not-found-challenge/Scarecrow.png"}
           alt={"scarecrow 404 not found"}
           className={"mx-auto h-auto w-[286px] md:w-[540px]"}
           width={"1079"}
